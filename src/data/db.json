@@ -1,0 +1,52 @@
+{
+  "books": [
+    {
+      "id": "1",
+      "title": "Eloquent Javascript",
+      "description": "Best JS Book",
+      "categories": [
+        "Javascript",
+        "Programming"
+      ]
+    },
+    {
+      "id": "2",
+      "title": "Laravel from scrapth",
+      "description": "Best PHP Framework",
+      "categories": [
+        "PHP",
+        "Laravel",
+        "Framework"
+      ]
+    },
+    {
+      "id": "3",
+      "title": "React Basic",
+      "description": "Best React Book",
+      "categories": [
+        "Javascript",
+        "React",
+        "Framework"
+      ]
+    },
+    {
+      "id": "102e",
+      "title": "new book",
+      "description": "new book description",
+      "categories": [
+        "TailwindCSS",
+        "SASS",
+        "CSS"
+      ]
+    },
+    {
+      "id": "a368",
+      "title": "JS Book",
+      "description": "JS book description",
+      "categories": [
+        "ES6",
+        "JS"
+      ]
+    }
+  ]
+}
