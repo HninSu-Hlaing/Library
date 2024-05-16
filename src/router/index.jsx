@@ -7,6 +7,7 @@ import { BookDetail } from "../pages/BookDetail";
 import { BookForm } from "../pages/BookForm";
 import { Register } from "../pages/Register";
 import { Login } from "../pages/Login";
+import { NotFound } from "../pages/NotFound";
 import React, { useContext } from "react";
 import { AuthContext } from "../contexts/AuthContext";
 
@@ -49,6 +50,10 @@ export default function index(){
           path : '/login',
           element: !isAuthenticated ? <Login /> : <Navigate to='/' />
         },
+        {
+          path: "*",
+          element: <NotFound />
+        }
       ]
     },
   ]);

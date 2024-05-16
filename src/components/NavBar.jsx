@@ -57,7 +57,7 @@ export const NavBar = () => {
 					<div className='flex items-center gap-3 '>
 						<Link to='/create' className="flex justify-between items-center font-bold text-white bg-indigo-600 px-1	py-1 sm:py-2 sm:px-3 rounded-md md:rounded-lg">
 							<img src={createIcon} alt="create icon" className='w-10 h-8 block sm:hidden' />
-							<div className='flex ml-1 text-sm'><span className='hidden sm:block tracking-widest'>Create</span></div>
+							<div className='flex ml-1 text-sm'><span className='hidden sm:block tracking-wider'>Create</span></div>
 						</Link>
 						{/* profile image */}
 						<div className='space-x-3'>
@@ -65,15 +65,15 @@ export const NavBar = () => {
 							<div className='space-x-3 flex'>
 								<Link to={`/login`} className='flex justify-center items-center border border-primary text-primary text-sm rounded-md md:rounded-lg px-2 py-2 font-bold'>
 									<img src={loginIcon} alt="login icon" className='w-6 h-4 block sm:hidden' />
-									<span className='hidden sm:block tracking-widest font-bold'>Login</span>
+									<span className='hidden sm:block tracking-wider font-bold'>Login</span>
 								</Link>
 								<Link to={`/register`} className='flex justify-center items-center font-bold bg-primary text-sm rounded-md md:rounded-lg text-white px-3 py-2'>
 									<img src={registerIcon} alt="register icon" className='w-8 h-6 block sm:hidden' />
-									<span className='hidden sm:block tracking-widest'>Register</span>
+									<span className='hidden sm:block tracking-wider'>Register</span>
 								</Link>
 							</div>
 						}
-						{ !!user &&	<button onClick={userSignOut} className='bg-red-500 text-sm rounded-md md:rounded-lg text-white px-3 py-2 tracking-widest font-bold'>Logout</button>}
+						{ !!user &&	<button onClick={userSignOut} className='bg-red-500 text-sm rounded-md md:rounded-lg text-white px-3 py-2 tracking-wider font-bold'>Logout</button>}
 						</div>
 						<div className='mt-2 cursor-pointer'>
 							{ isDark && <img src={lightIcon} alt='' className='w-10 h-8' onClick={() => changeTheme('light')} />}

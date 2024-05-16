@@ -173,7 +173,7 @@ export const BookForm = () => {
 
 	return (
 		<div className={`w-[90%] md:w-[95%] mx-auto py-7 mb-7 ${ isDark ? 'text-white': ''}`}>	
-			<form className="w-full max-w-lg mx-auto mt-5" onSubmit={submitForm}>
+			<form className="w-full max-w-lg mx-auto mt-7" onSubmit={submitForm}>
 				<div className="flex flex-wrap -mx-3 mb-6">
 					<div className="w-full px-3">
 						<label className="block uppercase tracking-wid text-xs font-bold mb-2 tracking-widest" htmlFor="grid-password">

@@ -43,7 +43,7 @@ export const Register = () => {
 	}
 
 	return (
-		<div className="w-[90%] max-w-lg mx-auto mt-14 mb-36">
+		<div className="w-[90%] max-w-lg mx-auto mt-24 mb-36">
 			<form className={`bg-white rounded px-8 py-14 mb-4" ${ isDark ? 'shadow-bs02' : 'shadow-bs01'} `} onSubmit={registerUser}>
 				<h1 className='font-bold text-2xl text-primary mb-7'>Register Form</h1>
 				<div className="mb-4">

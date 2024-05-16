@@ -1,5 +1,5 @@
-import React from 'react'
-import { useParams } from 'react-router-dom'
+import React, { useEffect } from 'react'
+import { useParams, useNavigate } from 'react-router-dom'
 import { useTheme } from '../hooks/useTheme';
 import useFirestore from '../hooks/useFirestore';
 import { NoteForm } from '../components/NoteForm';
@@ -14,11 +14,19 @@ export const BookDetail = () => {
 	let { error, data: book, loading } =getDocument("books", id);
 
 	let { isDark } = useTheme();
+	let navigate = useNavigate();
+
+	useEffect(() => {
+		if(error){
+			setTimeout(() => {
+				navigate('/');
+			}, 1000);
+		}
+	},[error,navigate])
 
 	return (
 		<>
-			{ error && <div>{ error }</div>}
-			{ loading && <div>loading ....</div>}
+			{ loading && <div>Loading ...</div>}
 			{ book && (
 				<div className='py-14 mx-auto w-[90%] md:w-[95%]'>
 					<div className={`grid grid-cols-1 md:grid-cols-2 space-y-5 ${ isDark ? 'text-white' : ''}`}>
