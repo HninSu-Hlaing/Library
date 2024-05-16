@@ -28,7 +28,7 @@ export const BookDetail = () => {
 		<>
 			{ loading && <div>Loading ...</div>}
 			{ book && (
-				<div className='py-14 mx-auto w-[90%] md:w-[95%]'>
+				<div className='py-14 mx-auto w-[90%] md:w-[95%] mt-32 mb-20 lg:mt-16 lg:mb-16'>
 					<div className={`grid grid-cols-1 md:grid-cols-2 space-y-5 ${ isDark ? 'text-white' : ''}`}>
 						<div className='w-[90%] md:w-[80%] mx-auto mb-5 md:mb-0'>
 							<img src={book.cover} alt="book image" className='w-full h-[300px]' />

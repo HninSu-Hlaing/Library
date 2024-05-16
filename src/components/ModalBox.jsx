@@ -3,7 +3,7 @@ export default function Modal({ open, onClose, children }) {
     <div
       onClick={onClose}
       className={`
-        fixed inset-0 flex justify-center items-center transition-colors
+        fixed z-[9999] inset-0 flex justify-center items-center transition-colors
         ${open ? "visible bg-black/20 fixed z-50 pointer-events-none" : "invisible"}
       `}
     >

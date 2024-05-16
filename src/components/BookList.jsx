@@ -48,7 +48,7 @@ export const BookList = () => {
 	}
 
 	return (
-		<div className='my-10 px-10 md:px-5 lg:px-0 pb-10'>
+		<div className='mt-10 mb-14 px-10 md:px-5 lg:px-0 pb-10'>
 			{ loading && <div>Loading ....</div>}
 			{ !!books && (
 				<div className={`grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 mt-5 ${open ? 'pointer-events-none' : 'pointer-events-auto'}`}>

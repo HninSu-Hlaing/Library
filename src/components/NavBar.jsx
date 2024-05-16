@@ -36,7 +36,7 @@ export const NavBar = () => {
 	let { changeTheme, isDark } = useTheme();
 
 	return (
-		<nav className={`shadow-md ${ isDark ? 'shadow-primary' : ''} `}>
+		<nav className={`fixed w-full top-0 z-[99] shadow-md ${ isDark ? 'shadow-primary bg-black' : 'bg-white'} `}>
 			<ul className='flex flex-col-reverse lg:flex-row lg:items-center p-5 max-w-6xl mx-auto'>
 				<li className='flex items-center gap-2 '>
 					<input value={ search } onChange={e => setSearch(e.target.value)} type='text' placeholder='Search book name...' className='w-full px-3 py-1 rounded-md md:rounded-lg outline-blue-200 outline' />
